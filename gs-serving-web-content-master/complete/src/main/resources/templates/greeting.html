@@ -1,0 +1,8 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+    <th:block th:include="helperTemplate.html"/>
+    <h1 th:text="#{greeting}"></h1>
+    <p th:text="'This is what I got: ' + ${json} + '!'" />
+</body>
+</html>

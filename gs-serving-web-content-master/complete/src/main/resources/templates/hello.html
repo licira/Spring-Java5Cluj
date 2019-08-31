@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<body>
+    <th:block th:include="helperTemplate.html"/>
+    <h1 th:text="#{hello}"></h1>
+    <h1 th:inline="text">You are logged in as: [[${#httpServletRequest.remoteUser}]]!</h1>
+</body>
+</html>
